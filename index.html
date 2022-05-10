@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Kalavadiya Portfolio</title>
+
+  <link rel="shortcut icon" href="./images/WebLogo.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+  <div class="content">
+    <div id="button" class="HoverButton">
+    </div>
+  </div>
+    <main>
+      <!-- Side bar with personal infomration and is done by using the aside tag that allows the content to be on th side  -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./images/DevAvatar.png" alt="Richard hanrick" width="80">
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Dev Kalavadiya</h1>
+            <p class="title">NYUAD Sophomore</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:dk3936@nyu.edu" class="contact-link">dk3936@nyu.edu</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+971543082874" class="contact-link">+971 543082874</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time>December 23, 2001</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>New York University Abu Dhabi, Saadiyat Island, Abu Dhabi, UAE</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.facebook.com/dev.kalavadiya.37/" target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://twitter.com/DevKalavadia" target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.instagram.com/dev.kalavadia/" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/dev-k-a80561130/" target="_blank" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Using this class to control the Main content on the screen based on the chosen header in the nav bar through click handler  -->
+      <div class="main-content">
+        <!-- Navigation Bar  -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>CommLab</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- About Me Section  -->
+
+
+        <article class="about  active" data-page="about">
+
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a Sophomore at New York University Abu Dhabi currently majoring in Bachelor of Computer Science with
+              a
+              minor in Interactive
+              Media and Applied Mathematics.
+              I enjoy working on my perosnal projects and develop my web development skills.
+            </p>
+
+            <p>
+              Here is my protfolio website with all my details needed for you to get to know me and connect with me.
+              Moreover, this site also contains my CV, my projects, fields I am primairly intrested in and the assignmets done in the CommLab Class I took. 
+              <br>
+              <br>
+              Please don't hesitate to contact me through the form or connect with using one of my social media handles on the side bar.
+              Hope you enjoy your experience on this site!
+            </p>
+          </section>
+          
+          <section class="interest">
+            <h3 class="h3 interest-title">My Interests</h3>
+            <ul class="interest-list">
+              <li class="interest-item">
+                <div class="interest-icon-box">
+                  <svg width="50" height="42" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path
+                      d="M36.3998 29.2549C36.1804 29.1637 35.9279 29.2141 35.76 29.3825L29.3439 35.8193C29.176 35.9878 29.1257 36.2411 29.2167 36.4612C29.3075 36.6814 29.5217 36.8248 29.7591 36.8248H36.1752C36.4995 36.8248 36.7623 36.5611 36.7623 36.2358V29.799C36.7622 29.5609 36.6192 29.3461 36.3998 29.2549ZM31.1763 35.6469L35.5879 31.221V35.6469H31.1763Z"
+                      fill="url(#paint1_linear)" stroke="url(#paint2_linear)" stroke-width="0.25" />
+                    <path
+                      d="M40.6377 19.814C40.4183 19.7228 40.1658 19.7732 39.9978 19.9416L38.2394 21.7057V9.71161C38.2394 9.38628 37.9766 9.12261 37.6523 9.12261H33.1413L34.7788 7.47985C34.7791 7.47962 34.7793 7.47929 34.7795 7.47906L36.3573 5.89617C36.6954 5.55704 36.8816 5.10591 36.8816 4.62624C36.8816 4.14658 36.6954 3.6956 36.3573 3.35631L34.5328 1.52591C34.1948 1.18677 33.7451 1 33.2669 1C32.7888 1 32.3392 1.18677 32.0011 1.52591L30.4225 3.10958L28.515 5.02322L24.4288 9.12254H6.2047V3.29564C6.2047 2.9703 5.94181 2.70665 5.61759 2.70665C3.07149 2.70681 1 4.7848 1 7.33924V32.3559C1 32.3994 1.005 32.4417 1.01391 32.4825C1.095 33.5664 1.56242 34.5734 2.3436 35.3379C3.1786 36.1549 4.28087 36.6048 5.44743 36.6048H23.3879L20.0091 39.9946C19.8412 40.163 19.791 40.4162 19.8818 40.6364C19.9727 40.8565 20.1868 41 20.4243 41H40.413C40.7372 41 41.0001 40.7364 41.0001 40.411V20.3582C41.0001 20.12 40.857 19.9052 40.6377 19.814ZM32.8315 2.35897C33.0715 2.11804 33.4626 2.11804 33.7026 2.35897L35.5272 4.18945C35.7673 4.4303 35.7673 4.82242 35.5272 5.06335L34.3638 6.23053L31.668 3.52615L32.8315 2.35897ZM30.8377 4.35913L33.5334 7.06343L32.4562 8.14417L29.7606 5.43987L30.8377 4.35913ZM39.826 26.9764H38.7428C38.4185 26.9764 38.1557 27.2401 38.1557 27.5654C38.1557 27.8908 38.4185 28.1544 38.7428 28.1544H39.826V29.9293H38.7428C38.4185 29.9293 38.1557 30.1931 38.1557 30.5184C38.1557 30.8437 38.4185 31.1074 38.7428 31.1074H39.826V32.8822H38.7428C38.4185 32.8822 38.1557 33.1458 38.1557 33.4712C38.1557 33.7965 38.4185 34.0602 38.7428 34.0602H39.826V35.8351H38.7428C38.4185 35.8351 38.1557 36.0988 38.1557 36.4241C38.1557 36.7495 38.4185 37.0131 38.7428 37.0131H39.826V39.8222H21.8416L27.7719 33.873C28.0012 33.6428 28.0012 33.27 27.7719 33.04C27.7456 33.0135 27.7173 32.9906 27.6877 32.9703C27.4591 32.8133 27.1446 32.8363 26.9415 33.04L24.5622 35.427H5.44751C3.66688 35.427 2.23344 34.0324 2.17703 32.2493C2.18039 32.1373 2.18906 32.0263 2.20297 31.9166C2.20305 31.916 2.20313 31.9154 2.20321 31.9147C2.20977 31.8626 2.21766 31.8107 2.22664 31.7592C2.22766 31.7533 2.22875 31.7473 2.22977 31.7415C2.23797 31.6955 2.24719 31.6497 2.25727 31.6041C2.26008 31.5914 2.26305 31.5787 2.26602 31.5661C2.27492 31.5275 2.28453 31.4892 2.29485 31.451C2.30047 31.4303 2.30633 31.4099 2.31235 31.3893C2.32094 31.3593 2.32985 31.3295 2.3393 31.2999C2.34875 31.2704 2.35883 31.2411 2.36907 31.2119C2.37617 31.1915 2.38321 31.171 2.39086 31.1507C2.40516 31.1121 2.42032 31.074 2.43594 31.0361C2.44039 31.0252 2.44477 31.0142 2.44938 31.0033C2.46946 30.9562 2.49032 30.9098 2.51235 30.8638C2.51328 30.8619 2.51414 30.8599 2.51508 30.858C2.9743 29.9046 3.85751 29.1938 4.91743 28.9732C4.9204 28.9726 4.92337 28.9719 4.92634 28.9712C4.97493 28.9613 5.02399 28.9528 5.07337 28.9449C5.08157 28.9436 5.08977 28.9418 5.09813 28.9406C5.14274 28.9338 5.18782 28.9285 5.2329 28.9234C5.24556 28.922 5.25813 28.92 5.27087 28.9188C5.31438 28.9144 5.35829 28.9115 5.4022 28.9087C5.4161 28.9078 5.43001 28.9064 5.44392 28.9057C5.50142 28.9028 5.55938 28.9013 5.61759 28.9013C5.94181 28.9013 6.2047 28.6377 6.2047 28.3123V24.0416C6.2047 23.7163 5.94181 23.4527 5.61759 23.4527C5.29337 23.4527 5.03048 23.7163 5.03048 24.0416V27.7604C4.03907 27.8862 3.11883 28.3298 2.39321 29.0407C2.31688 29.1154 2.24453 29.1932 2.17406 29.2722V7.33924C2.17406 5.63526 3.41047 4.21531 5.0304 3.93488V21.6858C5.0304 22.011 5.29329 22.2748 5.61751 22.2748C5.94173 22.2748 6.20462 22.011 6.20462 21.6858V10.3006H23.2547L20.009 13.5567C19.7797 13.7868 19.7797 14.1597 20.009 14.3897C20.2383 14.6196 20.61 14.6196 20.8393 14.3897L25.0872 10.1281C25.0873 10.128 25.0874 10.1278 25.0875 10.1277L28.9301 6.27278L31.6257 8.97715L31.3094 9.29441C31.3092 9.29465 31.3089 9.29488 31.3087 9.29513L19.4705 21.1715L16.7749 18.4672L19.1083 16.1263C19.3376 15.8961 19.3376 15.5233 19.1083 15.2933C18.879 15.0634 18.5073 15.0634 18.2781 15.2933L15.5294 18.0507C15.5147 18.0655 15.501 18.081 15.4881 18.097C15.4838 18.1024 15.48 18.1081 15.4759 18.1136C15.4676 18.1247 15.4595 18.1358 15.4519 18.1474C15.4476 18.1542 15.4437 18.1611 15.4396 18.168C15.4332 18.179 15.4269 18.1902 15.4212 18.2015C15.4175 18.2088 15.4141 18.2164 15.4107 18.224C15.4054 18.2355 15.4006 18.2473 15.3961 18.259C15.3946 18.2632 15.3925 18.2671 15.391 18.2712L14.2472 21.522L13.4674 23.7384C13.4571 23.7678 13.4496 23.7978 13.4441 23.828H11.4916C11.1674 23.828 10.9045 24.0916 10.9045 24.4169C10.9045 24.7423 11.1674 25.0059 11.4916 25.0059H27.7505C28.0748 25.0059 28.3376 24.7423 28.3376 24.4169C28.3376 24.0916 28.0748 23.828 27.7505 23.828H16.0854L19.6659 22.5599C19.6689 22.5589 19.6717 22.5574 19.6746 22.5563C19.6886 22.5511 19.7022 22.5452 19.7157 22.5391C19.7211 22.5366 19.7265 22.5342 19.7318 22.5316C19.7458 22.5246 19.7596 22.5168 19.7732 22.5085C19.7776 22.5058 19.7821 22.5034 19.7864 22.5007C19.8006 22.4916 19.8143 22.4816 19.8279 22.4711C19.8312 22.4686 19.8347 22.4663 19.838 22.4636C19.8543 22.4504 19.8703 22.4363 19.8855 22.421L31.9671 10.3007H37.0652V22.8837L28.667 31.3089C28.4377 31.5391 28.4377 31.9119 28.667 32.1419C28.6813 32.1563 28.6962 32.1698 28.7116 32.1823C28.8193 32.2704 28.9508 32.3145 29.0822 32.3145C29.2136 32.3145 29.3451 32.2704 29.4527 32.1823C29.4681 32.1698 29.483 32.1563 29.4973 32.1419L29.4976 32.1417L39.826 21.7799V26.9764ZM18.3967 21.76L16.715 22.3556L15.5945 21.2315L16.1882 19.5444L18.3967 21.76Z"
+                      fill="url(#paint3_linear)" stroke="url(#paint4_linear)" stroke-width="0.25" width="60" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear" x1="29.602" y1="29.21" x2="36.1781" y2="36.4484"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint2_linear" x1="29.602" y1="29.21" x2="36.1781" y2="36.4484"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint3_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint4_linear" x1="3.26667" y1="1" x2="37.8" y2="39.1334"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="interest-content-box">
+                  <h4 class="h4 interest-item-title">Web design</h4>
+                  <p class="interest-item-text">
+                    I'm intrested in modern web development and learning about web3.0 </p>
+                </div>
+              </li>
+
+              <li class="interest-item">
+                <div class="interest-icon-box">
+                  <svg width="40" height="42" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3 1C1.89543 1 1 1.89543 1 3V28C1 29.1046 1.89543 30 3 30H37C38.1046 30 39 29.1046 39 28V3C39 1.89543 38.1046 1 37 1H3ZM36 9H4V28H36V9Z"
+                      fill="url(#paint0_linear)" />
+                    <path
+                      d="M37.6172 0.375H2.38281C1.06903 0.375 0 1.44403 0 2.75781V29.2422C0 30.556 1.06903 31.625 2.38281 31.625H37.6172C38.931 31.625 40 30.556 40 29.2422V2.75781C40 1.44403 38.931 0.375 37.6172 0.375ZM38.4375 29.2422C38.4375 29.6945 38.0695 30.0625 37.6172 30.0625H2.38281C1.93054 30.0625 1.5625 29.6945 1.5625 29.2422V2.75781C1.5625 2.30554 1.93054 1.9375 2.38281 1.9375H37.6172C38.0695 1.9375 38.4375 2.30554 38.4375 2.75781V29.2422Z"
+                      fill="url(#paint1_linear)" />
+                    <path
+                      d="M14.9219 5.79156H35.0781C35.5096 5.79156 35.8594 5.44183 35.8594 5.01031C35.8594 4.5791 35.5096 4.22906 35.0781 4.22906H14.9219C14.4904 4.22906 14.1406 4.5791 14.1406 5.01031C14.1406 5.44183 14.4904 5.79156 14.9219 5.79156Z"
+                      fill="url(#paint2_linear)" />
+                    <path
+                      d="M3.99231 5.3094C4.01184 5.3564 4.03595 5.40157 4.06403 5.44368C4.0921 5.48671 4.12506 5.52669 4.16107 5.56239C4.30634 5.70857 4.50775 5.79158 4.71313 5.79158C4.76471 5.79158 4.81567 5.7867 4.86633 5.77663C4.91638 5.76656 4.96552 5.7516 5.01251 5.73207C5.05951 5.71254 5.10468 5.68843 5.14679 5.66035C5.18982 5.63136 5.2298 5.5984 5.2655 5.5627C5.30243 5.52669 5.33447 5.48671 5.36316 5.44398C5.39154 5.40157 5.41565 5.3564 5.43518 5.3094C5.45471 5.2618 5.46967 5.21266 5.47974 5.16322C5.48981 5.11256 5.49438 5.06099 5.49438 5.01033C5.49438 4.95937 5.48981 4.90779 5.47974 4.85805C5.46967 4.808 5.45471 4.75856 5.43518 4.71187C5.41565 4.66426 5.39154 4.61879 5.36316 4.57668C5.33447 4.53365 5.30243 4.49397 5.2655 4.45796C5.2298 4.42195 5.18982 4.3893 5.14679 4.36092C5.10468 4.33284 5.05951 4.30873 5.01251 4.2892C4.96552 4.26967 4.91638 4.25471 4.86633 4.24464C4.76563 4.2242 4.66187 4.2242 4.56085 4.24464C4.5108 4.25471 4.46167 4.26967 4.41498 4.2892C4.36707 4.30873 4.3219 4.33284 4.27979 4.36092C4.23676 4.3893 4.19678 4.42195 4.16107 4.45796C4.12506 4.49397 4.0921 4.53365 4.06403 4.57668C4.03595 4.61879 4.01184 4.66426 3.99231 4.71187C3.97278 4.75856 3.95782 4.808 3.94775 4.85805C3.93738 4.90779 3.93188 4.95937 3.93188 5.01033C3.93188 5.06099 3.93738 5.11256 3.94775 5.16322C3.95782 5.21266 3.97278 5.2618 3.99231 5.3094Z"
+                      fill="url(#paint3_linear)" />
+                    <path
+                      d="M7.11731 5.3094C7.13684 5.3564 7.16095 5.40157 7.18903 5.44368C7.2171 5.48671 7.25006 5.52669 7.28607 5.56239C7.43134 5.70857 7.63275 5.79158 7.83813 5.79158C7.88971 5.79158 7.94067 5.7867 7.99133 5.77663C8.04138 5.76656 8.09052 5.7516 8.13751 5.73207C8.18451 5.71254 8.22968 5.68843 8.27179 5.66035C8.31482 5.63136 8.3548 5.5984 8.39142 5.5627C8.42743 5.52669 8.45947 5.48671 8.48816 5.44398C8.51654 5.40157 8.54065 5.3564 8.56018 5.3094C8.57971 5.2618 8.59467 5.21266 8.60474 5.16322C8.61481 5.11256 8.61938 5.06099 8.61938 5.01033C8.61938 4.95937 8.61481 4.90779 8.60474 4.85805C8.59467 4.808 8.57971 4.75856 8.56018 4.71187C8.54065 4.66426 8.51654 4.61879 8.48816 4.57668C8.45947 4.53365 8.42743 4.49397 8.39142 4.45796C8.3548 4.42195 8.31482 4.3893 8.27179 4.36092C8.22968 4.33284 8.18451 4.30873 8.13751 4.2892C8.09052 4.26967 8.04138 4.25471 7.99133 4.24464C7.89063 4.2242 7.78687 4.2242 7.68585 4.24464C7.6358 4.25471 7.58667 4.26967 7.53998 4.2892C7.49207 4.30873 7.4469 4.33284 7.40479 4.36092C7.36176 4.3893 7.32178 4.42195 7.28607 4.45796C7.25006 4.49397 7.2171 4.53365 7.18903 4.57668C7.16095 4.61879 7.13684 4.66426 7.11731 4.71187C7.09778 4.75856 7.08282 4.808 7.07275 4.85805C7.06238 4.90779 7.05688 4.95937 7.05688 5.01033C7.05688 5.06099 7.06238 5.11256 7.07275 5.16322C7.08282 5.21266 7.09778 5.2618 7.11731 5.3094Z"
+                      fill="url(#paint4_linear)" />
+                    <path
+                      d="M10.2423 5.3094C10.2618 5.3564 10.2859 5.40157 10.314 5.44368C10.3421 5.48671 10.3751 5.52669 10.4111 5.56239C10.4468 5.5984 10.4868 5.63136 10.5298 5.66005C10.5719 5.68843 10.6171 5.71254 10.665 5.73207C10.7117 5.7516 10.7608 5.76656 10.8109 5.77663C10.8609 5.7867 10.9125 5.79128 10.9631 5.79128C11.0147 5.79128 11.0657 5.7867 11.1163 5.77663C11.1664 5.76656 11.2155 5.7516 11.2625 5.73207C11.3095 5.71254 11.3547 5.68843 11.3977 5.66005C11.4398 5.63136 11.4798 5.5984 11.5164 5.56239C11.5524 5.52669 11.5845 5.48671 11.6132 5.44368C11.6415 5.40157 11.6656 5.3564 11.6852 5.3094C11.7047 5.2618 11.7197 5.21266 11.7297 5.16322C11.7398 5.11256 11.7444 5.06099 11.7444 5.01003C11.7444 4.95937 11.7398 4.90779 11.7297 4.85774C11.7197 4.80769 11.7047 4.75856 11.6852 4.71187C11.6656 4.66396 11.6415 4.61879 11.6132 4.57668C11.5845 4.53365 11.5524 4.49367 11.5164 4.45796C11.4798 4.42195 11.4398 4.38899 11.3977 4.36092C11.3547 4.33284 11.3095 4.30873 11.2625 4.2892C11.2155 4.26967 11.1664 4.25471 11.1163 4.24464C11.0156 4.2242 10.9119 4.2242 10.8109 4.24464C10.7608 4.25471 10.7117 4.26967 10.665 4.2892C10.6171 4.30873 10.5719 4.33284 10.5298 4.36092C10.4868 4.38899 10.4468 4.42195 10.4111 4.45796C10.3751 4.49367 10.3421 4.53365 10.314 4.57668C10.2859 4.61879 10.2618 4.66396 10.2423 4.71187C10.2228 4.75856 10.2078 4.80769 10.1978 4.85774C10.1874 4.90779 10.1819 4.95937 10.1819 5.01003C10.1819 5.06099 10.1874 5.11256 10.1978 5.16322C10.2078 5.21266 10.2228 5.2618 10.2423 5.3094Z"
+                      fill="url(#paint5_linear)" />
+                    <path
+                      d="M22.7154 13.739C22.344 13.5192 21.8649 13.6425 21.6452 14.0139L17.0099 21.8524C16.7901 22.2238 16.9131 22.7029 17.2845 22.9223C17.4093 22.9962 17.5464 23.0316 17.6816 23.0316C17.9486 23.0316 18.2089 22.8942 18.3548 22.6477L22.9901 14.8092C23.2098 14.4378 23.0868 13.9587 22.7154 13.739Z"
+                      fill="url(#paint6_linear)" />
+                    <path
+                      d="M12.9769 16.0351V15.2462C12.9769 14.8095 13.3321 14.454 13.7688 14.454H13.7798C14.2113 14.454 14.561 14.1042 14.561 13.6727C14.561 13.2415 14.2113 12.8915 13.7798 12.8915H13.7688C12.4706 12.8915 11.4144 13.948 11.4144 15.2462V16.0351C11.4144 16.3192 11.2978 16.5963 11.0946 16.795L10.0823 17.7853C9.93305 17.9312 9.84852 18.1307 9.8473 18.3395C9.84638 18.5482 9.92878 18.7487 10.0765 18.8964L11.108 19.9276C11.307 20.1263 11.4174 20.3906 11.4196 20.6719L11.4251 21.4907C11.4342 22.7801 12.4904 23.8293 13.7798 23.8293C14.2113 23.8293 14.561 23.4792 14.561 23.048C14.561 22.6165 14.2113 22.2668 13.7798 22.2668C13.3458 22.2668 12.9906 21.9137 12.9876 21.48L12.9821 20.6613C12.9772 19.9664 12.7037 19.3133 12.2127 18.8226L11.7397 18.3499L12.1874 17.9119C12.6891 17.4209 12.9769 16.737 12.9769 16.0351Z"
+                      fill="url(#paint7_linear)" />
+                    <path
+                      d="M27.023 20.6857V21.4745C27.023 21.9113 26.6678 22.2668 26.2311 22.2668H26.2201C25.7886 22.2668 25.4388 22.6165 25.4388 23.048C25.4388 23.4792 25.7886 23.8293 26.2201 23.8293H26.2311C27.5293 23.8293 28.5855 22.7728 28.5855 21.4745V20.6857C28.5855 20.4016 28.7021 20.1245 28.9053 19.9258L29.9176 18.9355C30.0668 18.7896 30.1514 18.59 30.1523 18.3813C30.1535 18.1725 30.0711 17.972 29.9234 17.8243L28.8919 16.7932C28.6929 16.5945 28.5821 16.3299 28.5803 16.0488L28.5745 15.23C28.5657 13.9407 27.5095 12.8918 26.2201 12.8918C25.7886 12.8918 25.4388 13.2415 25.4388 13.673C25.4388 14.1042 25.7886 14.4543 26.2201 14.4543C26.6537 14.4543 27.0093 14.8071 27.012 15.2407L27.0178 16.0595C27.0227 16.7541 27.2958 17.4072 27.7872 17.8982L28.2602 18.3709L27.8125 18.8088C27.3108 19.2996 27.023 19.9838 27.023 20.6857Z"
+                      fill="url(#paint8_linear)" />
+                    <path
+                      d="M36.0443 8.13531H3.95569C3.52417 8.13531 3.17444 8.48535 3.17444 8.91656V27.6666C3.17444 28.0981 3.52417 28.4478 3.95569 28.4478H13.2553C13.6868 28.4478 14.0366 28.0981 14.0366 27.6666C14.0366 27.2354 13.6868 26.8853 13.2553 26.8853H4.73694V9.69781H35.2631V26.8853H19.5312C19.0997 26.8853 18.75 27.2354 18.75 27.6666C18.75 28.0981 19.0997 28.4478 19.5312 28.4478H36.0443C36.4758 28.4478 36.8256 28.0981 36.8256 27.6666V8.91656C36.8256 8.48535 36.4758 8.13531 36.0443 8.13531Z"
+                      fill="url(#paint9_linear)" width="40" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="3.15333" y1="1" x2="26.6886" y2="35.0542"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear" x1="2.26667" y1="0.375001" x2="27.8327" y2="36.511"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint2_linear" x1="15.3714" y1="4.22906" x2="15.5472" y2="6.9288"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint3_linear" x1="4.02043" y1="4.22931" x2="5.36917" y2="5.71887"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint4_linear" x1="7.14543" y1="4.22931" x2="8.49417" y2="5.71887"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint5_linear" x1="10.2704" y1="4.22931" x2="11.6189" y2="5.71884"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint6_linear" x1="17.2521" y1="13.6301" x2="25.0143" y2="19.281"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint7_linear" x1="10.1144" y1="12.8915" x2="17.4785" y2="16.3959"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint8_linear" x1="25.7059" y1="12.8918" x2="33.0696" y2="16.3959"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                      <linearGradient id="paint9_linear" x1="5.08133" y1="8.13532" x2="19.9152" y2="35.2721"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259336" stop-color="#FFDB6E" />
+                        <stop offset="1" stop-color="#FFBC5E" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                </div>
+                <div class="interest-content-box">
+                  <h4 class="h4 interest-item-title">Software Engineering</h4>
+                  <p class="interest-item-text">
+                    Pursuing a career in a field that I am deeply interested. Working on polsihing my Data structures
+                    and
+                    Algorithm skills.
+                  </p>
+                </div>
+              </li>
+
+              <li class="interest-item">
+                <div class="interest-icon-box">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEt0lEQVRoge2YTWxUVRiGn+/MD1BooSEiYtrSSGXhRmM0GMU6NkxrAyoRWEBIZ1ySENEFulNXWF2AkhgCSRk0mIgJrYTATCVWBEGxLjUGmpCZiWhQw7QUmDLT87mYe9vpDyXSztBJ5lndfOfvfe93z7nnHChTpkyZUkIK1XE82vaYiOwGnnRCvar6Vl3LoV8LMZ63EJ0CCHIUeDQvFHRiKwsxnilEpwBIzsSwn+phP9X5sUJQsIy41AciKYBELFTQcQqXkSJTNjLbKBuZbZSNzDam3KL0xbYu8WO2K7JWoAGYXyRdLjdE5aKix31W9j7UevDvO1W8o5F4LLwBtEOgsjAa/zcDYgnXvBQ5OlnhpEbisfAGQY845V0issen2d6lzZ/fKKTS8fwV2zo/Yz1PqWEH8ApgReyGmuBnnePrTjDSF9u6xIenT6BSYGdNc+SjYoi+G/Fo6G0RPgD6vX7/imWB/f/kl3sTsdB54HptcyQI4MdsJ/c5dU3HRCLadgaR58YEVc/WthxafS/91bVE2hOx0LPAukwmsx14FyAZDZ2yIhUGeBxYkzy3cV6uiawDEJE992rijojodJobtbsBjGUdQPLcxnkqNAn6hBdIAUuHB+YsAm6BPgLCHN+8X6Yz6L2++amYM+TtvTXXYkVXAOhgZTVYgGtGckbAI4ty1WUBwJLAp4MzLWS6PPBKx3UAdyXVrLqaU0YdI96sa6R0UA+LABRSBseIGkrOiEdyGZExRsRTckawzstXmzKIM0e09DKi4mgWUkbUyQilZwQZ0ZwyFvoBjOjCXEwHAa72bFtwX8RNwaUTW6qcxwEAtbIQQFX6RzPifloqVwAy6fTDxZc6NV6PbxmAwp8A4rx8gf7ROcLI9/YbgPXojP/QpotBnwcQwb2tnDhHGM3IMQBV3VRsoXfDqGwCUEejq1mUlBGPY8SZOJod6iK3JK9JREOzJivJ7nCjCk1Ayvr1a2BEs3hImYwdu2rVrf3imkI7gAoHLveE7vtqFj++uVpVDwCI6C739tLVnLGkDNmcEclbfq2fPQg/C6z03KYrfnxz9f0wADkT4vN3kjtqX8j65BO3bERzlpShYuxkT3aHG+sDkTSYV4Ek0Che/4/J7nBjcS3ktIjP/xPQCCQRs74+EEnnackZqSDlrQ9E0olo21n3rKCqX8a7216rDXb8kOh+fRVqOxGeVtXvErG2UwpfqbFnKryVyZneIV/t2bbgZvZ6jViz2qhsUtUmp+gCYtbXBjuuJKKh1Vb1CPAg0AvY+kAkPeGom4iF/gW8IvJyTfDg6cs9oblmiDdEeIfi//1TIrorna36uKF171DyZOgFazgmkKltjizOrzjZvVYfUKWq0Xg0tGP56eW361oi7cN+6hUJgXQK/O7uAGYWHcz1LZ2KhIb91NcED3244sLiTCIWflMNJ52zyMXxLSdkJNndtlNV2ke6Rs6L4f3aNQdjMy/87iS+CTdj9T1glRub7FJkQkbS2ew+4MpoI30Gq/vz9jlF49KJLVVYPUCeCeCPuWmzb3zdCUYaWg8PDEMTcAa4KfCtqKepofXwQOEkT05D6+EBUc+LivQAN4HvPdY0uUfeMmXKlCld/gPVG75TdNRfvgAAAABJRU5ErkJggg=="
+                    width="45">
+                </div>
+                <div class="interest-content-box">
+                  <h4 class="h4 interest-item-title">Virtual Reality</h4>
+                  <p class="interest-item-text">
+                    As the focus these days shifts towards Virtual and Augmented reality, my interest has also increased
+                    after being part of VR events at the Expo2020.
+                  </p>
+                </div>
+              </li>
+
+              <li class="interest-item">
+                <div class="interest-icon-box">
+                  <img
+                    src="data:image/png;base64,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"
+                    width="45">
+                </div>
+                <div class="interest-content-box">
+                  <h4 class="h4 interest-item-title">Cryptocurrency</h4>
+                  <p class="interest-item-text">
+                    I love investing my money into stocks and crypto coins! I am keen of pairing up to machine learning
+                    and AI with trading to create an automated trading bot to maximize returns in day trading.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Resume Section  -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">New York University Abu Dhabi</h4>
+                <span>2020 — 2024</span>
+                <p class="timeline-text">
+                  Bachelor of Computer Science with minors in Interactive Media and Applied Mathematics
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Swami Vivekananda College</h4>
+                <span>2014 — 2019</span>
+                <p class="timeline-text">
+                  Fiji Year 12 Certificate Examination ranked 1st in class of 280.
+                  <br>Government President
+                  <br>Valedictorian for class of 2019
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Work Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Internship at Mental VR, Abu Dhabi</h4>
+                <span>November 2021 — Present</span>
+                <p class="timeline-text">
+                  Conducted VR headset training for participants in virtual events at Expo 2020
+                  <br>Managed and Configured headsets along with maintaining Engage accounts for users
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer and Photogrammetry</h4>
+                <span>October 2021 — Present</span>
+                <p class="timeline-text">
+                  Developing a database website for the Bronze Age era documenting the pathways for sailing ships in the
+                  gulf region around 4000 years ago.
+                  <br>Performed photogrammetry of primitive sailing boats along with generating 3D scans of each
+                  component
+                  allowing the boat construction to be documented.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+                <span>June 2021 — July 2021</span>
+                <p class="timeline-text">
+                  Built a fully-fledged travel Commlab website for a professor using custom CSS and HTML where needed
+                  and
+                  transferring content to new site on WordPress.
+                  <br>Documented the usage and management of the website for the Professor.
+                  <br>Designed the layout of the website along with the logo and edited pictures in Photoshop.
+                </p>
+              </li>
+            </ol>
+
+          </section>
+
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Leadership & Community Involvement</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Student Government President</h4>
+                <span>Swami Vivekananda College</span>
+                <p class="timeline-text">
+                  • Facilitated, supported, and coordinated all activities of the student council.
+                  <br>• Developed, promoted, and conducted a variety of extracurricular programs like sports day and
+                  multiethnic exchange programs for students.
+                  <br>• Organized and coordinated various fundraising programs like market day and funfair event.
+                  <br>• Planned, arranged, and chaired all meetings with council members, as needed.
+                  <br>• Developed and maintained cordial relationships with principal, teaching staff and students.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Achievements & Extracurriculars</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">NYU Tandon CSAW’21 Hack3D Fall Challenge – First Position</h4>
+                <span>November 2021</span>
+                <p class="timeline-text">
+                  • Investigated CAD models for cyber security flaws in the additive manufacturing process
+                  <br>• Presented findings in a report and to judges and researchers in the final of the competition
+                  <br>
+                </p>
+              </li>
+            </ol>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Google Hash Code</h4>
+                <span>April 2021</span>
+                <p class="timeline-text">
+                  • Solved a traffic system management challenge involving real time and hypothetical road networks
+                  <br>• Competed and secured first leaderboard position in the regional Hub
+                  <br>
+                </p>
+              </li>
+            </ol>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Nadi Gujrati District Soccer Team</h4>
+                <span>April 2016-December 2020</span>
+                <p class="timeline-text">
+                  • National Campions in 2018 and Futsal tournament runners-up.
+                </p>
+              </li>
+            </ol>
+
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <h4 class="h4 timeline-item-title">Language</h4>
+                <p class="timeline-text">
+                  Gujrati, Native Fluency; English, Fluent; Hindi, Fluent; Fijian,
+                  <br>
+                </p>
+              </li>
+              <li class="skills-item">
+                <h4 class="h4 timeline-item-title">Softwares</h4>
+                <p class="timeline-text">
+                  Proficient in Microsoft Office Suite, Photoshop, CorelDraw, Fusion 360, Metashape
+                  <br>
+                </p>
+              </li>
+              <li class="skills-item">
+                <h4 class="h4 timeline-item-title">Programming Languages</h4>
+                <p class="timeline-text">
+                  Python, C++, C, HTML, CSS, JavaScript, ReactJS, MongoDB
+                  <br>
+                </p>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Protfolio section -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item  active">
+                <a href="https://datine.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel2.png">
+                  </figure>
+                  <h3 class="project-title">Art Intel: Speculative Design Project</h3>
+                  <p class="project-category">AI generated matching-making Website</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://mo11y.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel3.png">
+                  </figure>
+                  <h3 class="project-title">Art Intel: Visual Project</h3>
+                  <p class="project-category">AI vs Human Art-off: The ultimate drawing competition between AIs and
+                    humans
+                  </p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://unsung.netlify.app/index.html" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel4.png">
+                  </figure>
+                  <h3 class="project-title">Art Intel: Sound & Text Project</h3>
+                  <p class="project-category">Unsung: Song generation. An AI-human music composition duo</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://retrocade.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel5.png">
+                  </figure>
+                  <h3 class="project-title">Arcade.AI</h3>
+                  <p class="project-category">The first of its kind AI-centered arcade studio. Let ARCADE.AI take you on
+                    a
+                    live changing arcade experience powered by machine learning.</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://joinleaf.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel6.png">
+                  </figure>
+                  <h3 class="project-title">Leaf</h3>
+                  <p class="project-category">A startup prototype for a sustainability lifestyle promotion app which
+                    incentivizes users to make environmentally conscious choices through a rewards program.</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://1001worlds.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/1001Worlds.png">
+                  </figure>
+                  <h3 class="project-title">1001Worlds | Piia's Travel Stories</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://github.com/Dev-Kalavadia/Python-chess-game" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/chess.png">
+                  </figure>
+                  <h3 class="project-title">Python Chess Game</h3>
+                  <p class="project-category">Multiplayer chess game in Python and Processing</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="http://shipping.dhakira.center/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/Dhakira.png">
+                  </figure>
+                  <h3 class="project-title">Dhakira Shipping Database</h3>
+                  <p class="project-category">Database website for the ancient shipping records and comprehensive Search
+                    along with Data Visualization</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Commlab Section  -->
+
+        <article class="commlab" data-page="commlab">
+          <header>
+            <h2 class="h2 article-title">Comm Lab</h2>
+          </header>
+          <section class="projects">
+            <section class="commlab-posts">
+              <ul class="commlab-posts-list">
+
+                <li class="commlab-post-item">
+                  <a href="https://dev-kalavadia.github.io/30MFF-Assignment1.github.io/" target="_blank">
+                    <figure class="commlab-banner-box">
+                      <img src="./images/zoom.png" alt="Design conferences in 2022" loading="lazy">
+                    </figure>
+                    <div class="commlab-content">
+                      <div class="commlab-meta">
+                        <p class="commlab-category">Assignment 1</p>
+                      </div>
+                      <h3 class="h3 commlab-item-title">30mff WebSite</h3>
+                      <p class="commlab-text">
+                        Individual website to house and debut our 30MFF video.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="commlab-post-item">
+                  <a href="https://npietrafesa.github.io/CommLab-Comix-Assignment/" target="_blank">
+                    <figure class="commlab-banner-box">
+                      <img src="./images/comic.png">
+                    </figure>
+                    <div class="commlab-content">
+                      <div class="commlab-meta">
+                        <p class="commlab-category">Assignment 2</p>
+                      </div>
+                      <h3 class="h3 commlab-item-title">Comix Strip WebSite</h3>
+                      <p class="commlab-text">
+                        Create and integrated an interactive Comic website by using custom made graphics and animations.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+
+                <li class="commlab-post-item">
+                  <a href="https://meera-420.github.io/BREATHE/" target="_blank">
+                    <figure class="commlab-banner-box">
+                      <img src="./images/breathe.png">
+                    </figure>
+                    <div class="commlab-content">
+                      <div class="commlab-meta">
+                        <p class="commlab-category">Assignment 3</p>
+                      </div>
+                      <h3 class="h3 commlab-item-title">Sounds Like Website</h3>
+                      <p class="commlab-text">
+                        Made a 2-3 minute sound piece which took the viewer on a jounrey through the audio on the
+                        website.
+                        Breathe is an immersive sound journey designed to recharge and ground your mind, body, and soul.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="commlab-post-item">
+                  <a href="https://npietrafesa.github.io/CommLab-VideoAssignment/" target="_blank">
+                    <figure class="commlab-banner-box">
+                      <img src="./images/Videoh.png">
+                    </figure>
+                    <div class="commlab-content">
+                      <div class="commlab-meta">
+                        <p class="commlab-category">Assignment 4</p>
+                      </div>
+                      <h3 class="h3 commlab-item-title">VID-E-OH Website</h3>
+                      <p class="commlab-text">
+                        Shot and edited a 6 minute video piece which was integrated in a website for a self-paced short
+                        film experience.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+        </article>
+
+        <!-- Contact Me Section -->
+
+        <article class="contact" data-page="contact">
+
+          <header>
+            <h2 class="h2 article-title">Contact Me</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d16558.57905122512!2d54.43485081609054!3d24.523510929568022!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1652169934063!5m2!1sen!2sae"
+                style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" width="400"
+                height="300"></iframe>
+            </figure>
+          </section>
+
+          <!-- https://github.com/formspree/formspree
+        Using Formspree to send an automated email with the message to my account -->
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://formspree.io/f/mwkyavbj" method="POST" class="form" data-form>
+
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input
+                  name="name">
+
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-inpu
+                  name="_replyto" t>
+              </div>
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
+              <button class="form-btn" type="submit" value="Send" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Icons link  -->
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+</body>
+</script>
+
+</html>
