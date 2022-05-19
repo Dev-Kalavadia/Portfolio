@@ -82,45 +82,45 @@ window.addEventListener("scroll", (e) => {
   userHasScrolled = true;
 });
 
-document.onmousemove = animatedCircles;
-const colors = [
-  // COlor scheme for the cursor following animations (just settled on one color since it matched the asthethis of the site instead of the neon colors i tried earlier )
-  "#fdd46c",
-  // "#FF3300",
-  // "#00FF66",
-  // "#00FFFF",
-  // "#FF0099",
-  // "#CC00FF",
-];
+// document.onmousemove = animatedCircles;
+// const colors = [
+//   // COlor scheme for the cursor following animations (just settled on one color since it matched the asthethis of the site instead of the neon colors i tried earlier )
+//   "#fdd46c",
+//   // "#FF3300",
+//   // "#00FF66",
+//   // "#00FFFF",
+//   // "#FF0099",
+//   // "#CC00FF",
+// ];
 
-function animatedCircles(event) {
-  // Checking if its not the Protfolio or Commlab Page since the hovering was conflciting with the clicking 
-    if (activePage !== 2 && activePage !== 3 && activePage !== 4) {
-    let circle = document.createElement("div");
-    circle.setAttribute("class", "circle");
-    document.body.appendChild(circle);
-    console.log((activePage = "printing"));
+// function animatedCircles(event) {
+//   // Checking if its not the Protfolio or Commlab Page since the hovering was conflciting with the clicking 
+//     if (activePage !== 2 && activePage !== 3 && activePage !== 4) {
+//     let circle = document.createElement("div");
+//     circle.setAttribute("class", "circle");
+//     document.body.appendChild(circle);
+//     console.log((activePage = "printing"));
 
-    circle.style.left = event.clientX + "px";
-    circle.style.top = event.clientY + "px";
+//     circle.style.left = event.clientX + "px";
+//     circle.style.top = event.clientY + "px";
 
-    // checking if the user has scrolled or not and if so moving the cursor follower away
-    if (userHasScrolled) {
-      circle.style.top += 1000 + "px";
-      circle.style.left += 1000 + "px";
-    }
+//     // checking if the user has scrolled or not and if so moving the cursor follower away
+//     if (userHasScrolled) {
+//       circle.style.top += 1000 + "px";
+//       circle.style.left += 1000 + "px";
+//     }
 
-    let color = colors[Math.floor(Math.random() * colors.length)];
-    circle.style.borderColor = color;
+//     let color = colors[Math.floor(Math.random() * colors.length)];
+//     circle.style.borderColor = color;
 
-    circle.style.transition = "all 0.5s linear 0s";
+//     circle.style.transition = "all 0.5s linear 0s";
 
-    circle.style.left = circle.offsetLeft - 20 + "px";
-    circle.style.top = circle.offsetTop - 20 + "px";
+//     circle.style.left = circle.offsetLeft - 20 + "px";
+//     circle.style.top = circle.offsetTop - 20 + "px";
 
-    circle.style.width = "50px";
-    circle.style.height = "50px";
-    circle.style.borderWidth = "11px";
-    circle.style.opacity = 0;
-  }
-  }
+//     circle.style.width = "50px";
+//     circle.style.height = "50px";
+//     circle.style.borderWidth = "11px";
+//     circle.style.opacity = 0;
+//   }
+//   }
