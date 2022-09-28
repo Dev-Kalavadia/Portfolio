@@ -16,11 +16,11 @@
 </head>
 
 <body>
-<div class="page">
-  <div class="content">
-    <div id="button" class="HoverButton">
+  <div class="page">
+    <div class="content">
+      <div id="button" class="HoverButton">
+      </div>
     </div>
-  </div>
     <main>
       <!-- Side bar with personal infomration and is done by using the aside tag that allows the content to be on th side  -->
       <aside class="sidebar" data-sidebar>
@@ -30,7 +30,7 @@
           </figure>
           <div class="info-content">
             <h1 class="name" title="Richard hanrick">Dev Kalavadiya</h1>
-            <p class="title">NYUAD Junior</p>
+            <p class="title">NYU Junior</p>
           </div>
           <button class="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
@@ -57,7 +57,8 @@
               </div>
               <div class="contact-info">
                 <p class="contact-title">Phone</p>
-                <a href="tel:+971543082874" class="contact-link">+971 543082874</a>
+                <!-- <a href="tel:+971543082874" class="contact-link">+971 543082874</a> -->
+                <a href="tel:+19172166427" class="contact-link">+1 917-216-6427</a>
               </div>
             </li>
 
@@ -77,7 +78,7 @@
               </div>
               <div class="contact-info">
                 <p class="contact-title">Location</p>
-                <address>New York University Abu Dhabi, Saadiyat Island, Abu Dhabi, UAE</address>
+                <address>80 Lafayette street, New York City , New York, USA</address>
               </div>
             </li>
           </ul>
@@ -119,11 +120,11 @@
               <button class="navbar-link" data-nav-link>Resume</button>
             </li>
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" data-nav-link>Projects</button>
             </li>
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>CommLab</button>
-            </li>
+            </li> -->
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
             </li>
@@ -141,23 +142,22 @@
 
           <section class="about-text">
             <p>
-              I am a Junior at New York University Abu Dhabi, currently majoring in Bachelor of Computer Science with
-	 a
-	 minor in Interactive
-	 Media and Applied Mathematics.
-	 I enjoy working on my personal projects and developing my web development skills.
+              I am a Junior at New York University Abu Dhabi, majoring in Bachelor of Computer Science with a minor in
+              Interactive Media and Applied Mathematics. I enjoy working on projects, developing software engineering
+              skills, and pushing myself to learn new tools and frameworks. I am passionate about learning new concepts and I am always looking for new opportunities to learn and grow.
             </p>
 
             <p>
-              Here is my portfolio website with all the details needed for you to get to know me and connect with me.
-              Moreover, this site also contains my CV, projects, and fields I am primarily interested in, and the assignments are done in the CommLab Class I took. 
+              Here is my portfolio website with all the details needed for you to get to know me better and view my
+              words. This site also contains my resume and both personal and professional projects and a contact page to
+              connect with me. 
               <br>
               <br>
-              Please don't hesitate to contact me through the form or connect using one of my social media handles on the sidebar.
-              I hope you enjoy your experience on this site!
+              Please don't hesitate to contact me through the form or connect using one of my social media handles on
+              the sidebar. I hope you enjoy your experience on this site! 
             </p>
           </section>
-          
+
           <section class="interest">
             <h3 class="h3 interest-title">My Interests</h3>
             <ul class="interest-list">
@@ -329,7 +329,8 @@
                 <div class="interest-content-box">
                   <h4 class="h4 interest-item-title">Cryptocurrency</h4>
                   <p class="interest-item-text">
-                    I love investing my money into stocks and crypto coins! I am keen on pairing up with machine learning
+                    I love investing my money into stocks and crypto coins! I am keen on pairing up with machine
+                    learning
                     and AI with trading to create an automated trading bot to maximize returns in day trading.
                   </p>
                 </div>
@@ -339,11 +340,15 @@
         </article>
 
         <!-- Resume Section  -->
+        <!-- <a href="./directory/yourfile.pdf" download="newfilename">Download the pdf</a> -->
 
         <article class="resume" data-page="resume">
           <header>
             <h2 class="h2 article-title">Resume</h2>
           </header>
+          <div class="btn">
+            <a class="mybtn" href="./Dev Kalavadiya Resume.pdf" download="Dev Kalavadiya Resume" target="_blank">Download Resume</a>
+            </div>
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
@@ -357,7 +362,7 @@
                 <h4 class="h4 timeline-item-title">New York University Abu Dhabi</h4>
                 <span>2020 — 2024</span>
                 <p class="timeline-text">
-                  Bachelor of Computer Science with minors in Interactive Media and Applied Mathematics
+                  Bachelor of Computer Science with minors in Interactive Media and Applied Mathematics, GPA: 3.96/4.0
                 </p>
               </li>
 
@@ -383,35 +388,48 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Internship at Mental VR, Abu Dhabi</h4>
-                <span>November 2021 — Present</span>
+                <h4 class="h4 timeline-item-title">Web Developer and Photogrammetry</h4>
+                <span>DHAKIRA Center for Heritage Studies
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  October 2021 — Present</span>
                 <p class="timeline-text">
-                  Conducted VR headset training for participants in virtual events at Expo 2020
-                  <br>Managed and Configured headsets along with maintaining Engage accounts for users
+                  • Developed a database website for ancient shipping records along with a comprehensive search engine
+                  using React.js and Node.js. <br>
+                  • Created data collections in MongoDB and linked it to the Express backend.<br>
+                  • Automated data filtering and cleaning and seeded the entries using Mongoose.js <br>
+                  • Performed photogrammetry of primitive sailing boats along with generating 3D scans of each component
+                  allowing
+                  the boat construction to be documented.
                 </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Web Developer and Photogrammetry</h4>
-                <span>October 2021 — Present</span>
+                <h4 class="h4 timeline-item-title">VR Logistics Intern</h4>
+                <span>Mental VR
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;November
+                  2021 — May 2022</span>
                 <p class="timeline-text">
-                  Developing a database website for the Bronze Age era documenting the pathways for sailing ships in the
-                  gulf region around 4000 years ago.
-                  <br>Performed photogrammetry of primitive sailing boats along with generating 3D scans of each
-                  component
-                  allowing the boat construction to be documented.
+                  • Successfully managed and directed the VR headset training for participants in virtual events at Expo
+                  2020.<br>
+                  • Responsible for the content sharing of the White Cell media.<br>
+                  • Delivered project demonstrations and showed custom-made Virtual environment to high-ranking
+                  government
+                  officers of the Gulf.
                 </p>
               </li>
+
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Web Developer</h4>
-                <span>June 2021 — July 2021</span>
+                <span>New York University Abu Dhabi
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;June
+                  2021 — July 2021</span>
                 <p class="timeline-text">
-                  Built a fully-fledged travel Commlab website for a professor using custom CSS and HTML where needed
+                  • Built a fully-fledged travel blog website for a professor using custom CSS and HTML where needed
                   and
                   transferring content to new site on WordPress.
-                  <br>Documented the usage and management of the website for the Professor.
-                  <br>Designed the layout of the website along with the logo and edited pictures in Photoshop.
+                  <br>• Documented the usage and management of the website for the Professor.
+                  <br>• Designed the layout of the website along with the logo and edited pictures in Photoshop.
                 </p>
               </li>
             </ol>
@@ -427,6 +445,16 @@
               <h3 class="h3">Leadership & Community Involvement</h3>
             </div>
             <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Treasurer</h4>
+                <span>TASHAN: South Asian Student Association</span>
+                <p class="timeline-text">
+                  • Oversaw financial planning, budgeting, and spending of funds for all cultural events. <br>
+                  • Handled receipts, disbursements, banking, payments, and financial instruments. <br>
+                  • Forecasted for future financial decisions and positions. <br>
+                </p>
+              </li>
+
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Student Government President</h4>
                 <span>Swami Vivekananda College</span>
@@ -497,14 +525,15 @@
               <li class="skills-item">
                 <h4 class="h4 timeline-item-title">Softwares</h4>
                 <p class="timeline-text">
-                  Proficient in Microsoft Office Suite, Photoshop, CorelDraw, Fusion 360, Metashape
+                  Proficient in Microsoft Office Suite, Illustrator, Photoshop, CorelDraw, Fusion 360, Metashape
                   <br>
                 </p>
               </li>
               <li class="skills-item">
-                <h4 class="h4 timeline-item-title">Programming Languages</h4>
+                <h4 class="h4 timeline-item-title">Programming Languages & Tools/Frameworks</h4>
                 <p class="timeline-text">
-                  Python, C++, C, HTML, CSS, JavaScript, ReactJS, MongoDB
+                  Python, C++, C, HTML/CSS, JavaScript, React, MongoDB, Postman, GitHub, Node.js, Git, VS Code, Express,
+                  Mongoose.js, Docker
                   <br>
                 </p>
               </li>
@@ -514,12 +543,147 @@
 
         <!-- Protfolio section -->
 
-        <article class="portfolio" data-page="portfolio">
+        <article class="projects" data-page="projects">
           <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="h2 article-title">projects</h2>
           </header>
           <section class="projects">
+
             <ul class="project-list">
+
+              <li class="project-item  active">
+                <a href="http://shipping.heritagelab.center/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/Dhakira.png">
+                  </figure>
+                  <h3 class="project-title">Dhakira Shipping Database</h3>
+                  <p class="project-category">Database website for the ancient shipping records and comprehensive search
+                    along with Data Visualization</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://delma.dhakira.center/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/Delma.png">
+                  </figure>
+                  <h3 class="project-title">Heritage Maps</h3>
+                  <p class="project-category">One of the many sites I created by using openleaf map integrated into
+                    Wordpress custom theme for telling heritage stories for historical places</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://retrocade.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel5.png">
+                  </figure>
+                  <h3 class="project-title">Arcade.AI</h3>
+                  <p class="project-category">The first of its kind AI-centered arcade studio. Let ARCADE.AI take you on
+                    a
+                    live changing arcade experience powered by machine learning.</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://github.com/Dev-Kalavadia/CLIshell" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/CLIshell.png">
+                  </figure>
+                  <h3 class="project-title">CLI Shell</h3>
+                  <p class="project-category">Implemented a Linux shell with multi-threading and scheduling
+                    capabilities.
+                    Integrated a remote access capability that allows several users to use the shell at the same time.
+                  </p>
+                </a>
+              </li>
+
+
+
+              <li class="project-item  active">
+                <a href="https://1001worlds.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/1001Worlds.png">
+                  </figure>
+                  <h3 class="project-title">1001Worlds | Piia's Travel Stories</h3>
+                  <p class="project-category">Built a fully-fledged travel blog website using custom CSS and HTML where
+                    needed and transferring content to new site on WordPress.</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="https://github.com/Dev-Kalavadia/Python-chess-game" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/chess.png">
+                  </figure>
+                  <h3 class="project-title">Python Chess Game</h3>
+                  <p class="project-category">Multiplayer chess game in Python and Processing</p>
+                </a>
+              </li>
+              <li class="project-item  active">
+                <a href="https://joinleaf.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel6.png">
+                  </figure>
+                  <h3 class="project-title">Leaf</h3>
+                  <p class="project-category">A startup prototype for a sustainability lifestyle promotion app which
+                    incentivizes users to make environmentally conscious choices through a rewards program.</p>
+                </a>
+              </li>
+              <li class="project-item  active">
+                <a href="https://github.com/Dev-Kalavadia/Virtual-File-Management-System" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/vfs.png">
+                  </figure>
+                  <h3 class="project-title">Virtual File Management System</h3>
+                  <p class="project-category">Developed a virtual filesystem (VFS) using linux commands. A user can
+                    create/delete/move folders and files. Each inode1 contains metadata about the node (e.g., file or
+                    folder, size,
+                    date).</p>
+                </a>
+              </li>
+
+
+              <li class="project-item  active">
+                <a href="https://unsung.netlify.app/index.html" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./images/artIntel4.png">
+                  </figure>
+                  <h3 class="project-title">Art Intel: Sound & Text Project</h3>
+                  <p class="project-category">Unsung: Song generation. An AI-human music composition duo</p>
+                </a>
+              </li>
+
+
+
+
               <li class="project-item  active">
                 <a href="https://datine.netlify.app/" target="_blank">
                   <figure class="project-img">
@@ -547,95 +711,13 @@
                   </p>
                 </a>
               </li>
-
-              <li class="project-item  active">
-                <a href="https://unsung.netlify.app/index.html" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/artIntel4.png">
-                  </figure>
-                  <h3 class="project-title">Art Intel: Sound & Text Project</h3>
-                  <p class="project-category">Unsung: Song generation. An AI-human music composition duo</p>
-                </a>
-              </li>
-
-              <li class="project-item  active">
-                <a href="https://retrocade.netlify.app/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/artIntel5.png">
-                  </figure>
-                  <h3 class="project-title">Arcade.AI</h3>
-                  <p class="project-category">The first of its kind AI-centered arcade studio. Let ARCADE.AI take you on
-                    a
-                    live changing arcade experience powered by machine learning.</p>
-                </a>
-              </li>
-
-              <li class="project-item  active">
-                <a href="https://joinleaf.netlify.app/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/artIntel6.png">
-                  </figure>
-                  <h3 class="project-title">Leaf</h3>
-                  <p class="project-category">A startup prototype for a sustainability lifestyle promotion app which
-                    incentivizes users to make environmentally conscious choices through a rewards program.</p>
-                </a>
-              </li>
-
-              <li class="project-item  active">
-                <a href="https://1001worlds.com/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/1001Worlds.png">
-                  </figure>
-                  <h3 class="project-title">1001Worlds | Piia's Travel Stories</h3>
-                  <p class="project-category">Web Development</p>
-                </a>
-              </li>
-
-              <li class="project-item  active">
-                <a href="https://github.com/Dev-Kalavadia/Python-chess-game" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/chess.png">
-                  </figure>
-                  <h3 class="project-title">Python Chess Game</h3>
-                  <p class="project-category">Multiplayer chess game in Python and Processing</p>
-                </a>
-              </li>
-
-              <li class="project-item  active">
-                <a href="http://shipping.dhakira.center/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./images/Dhakira.png">
-                  </figure>
-                  <h3 class="project-title">Dhakira Shipping Database</h3>
-                  <p class="project-category">Database website for the ancient shipping records and comprehensive Search
-                    along with Data Visualization</p>
-                </a>
-              </li>
             </ul>
           </section>
         </article>
 
         <!-- Commlab Section  -->
 
-        <article class="commlab" data-page="commlab">
+        <!-- <article class="commlab" data-page="commlab">
           <header>
             <h2 class="h2 article-title">Comm Lab</h2>
           </header>
@@ -717,7 +799,7 @@
               </ul>
             </section>
 
-        </article>
+        </article> -->
 
         <!-- Contact Me Section -->
 

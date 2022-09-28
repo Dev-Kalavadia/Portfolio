@@ -711,12 +711,12 @@ main {
   display: none;
 }
 
-.portfolio-select-box {
+.projects-select-box {
   position: relative;
   margin-bottom: 25px;
 }
 
-.portfolio-select {
+.projects-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
   display: flex;
@@ -730,7 +730,7 @@ main {
   font-weight: var(--fw-300);
 }
 
-.portfolio-select.active .select-icon {
+.projects-select.active .select-icon {
   transform: rotate(0.5turn);
 }
 
@@ -749,7 +749,7 @@ main {
   transition: 0.15s ease-in-out;
 }
 
-.portfolio-select.active + .select-list {
+.projects-select.active + .select-list {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -1332,12 +1332,12 @@ textarea.form-input::-webkit-resizer {
     padding-bottom: 20px;
   }
 
-  .portfolio-select-box {
+  .projects-select-box {
     display: none;
   }
 
 
-  /* portfolio and commlab grid */
+  /* projects and commlab grid */
 
   .project-list,
   .commlab-posts-list {
@@ -1548,3 +1548,32 @@ textarea.form-input::-webkit-resizer {
   border-radius: 25px;
   z-index: 1;
 }
+
+.btn{
+  margin: 50px;
+  text-align: center;
+}
+
+.mybtn{
+
+        position: absolute;
+        top: 5.5%;
+        right: 6.3%;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius:3px;
+        text-decoration:none;
+        font-family:sans-serif;
+        font-size:18px;
+        padding: 10px 20px;
+        background-color:hsl(35, 100%, 61%);
+        color: var(--white-1);
+        transition-delay:.2s;
+        transition:.3s;
+        font-variant-caps:all-small-caps;
+        box-shadow:4px 3px 11px 0 hsl(35, 100%, 68%);
+        }
+.mybtn:hover{
+        background-color:#665e00;
+        box-shadow:4px 3px 11px 0 #f6e5bc;
+        }
